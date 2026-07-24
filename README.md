@@ -1,27 +1,21 @@
-🌐 Personal Portfolio
+Personal Portfolio
+This website is made for showing my HTML and CSS projects. 
+The projects I have included in this portfolio are:-
 
-Welcome to the repository for my personal portfolio website! Built from scratch using pure HTML and CSS, this site serves as a central hub to showcase my web development journey, hands-on projects, and technical skills.
+1. A calculator
+<img width="720" height="1383" alt="1000346075" src="https://github.com/user-attachments/assets/2f78df2e-c5d5-448d-a09d-81d84c9273ee" />
 
-🚀 Some Projects that I featured on my portfolio
 
-Here are the key projects featured on my portfolio:
+2. OurBlueWorld
+<img width="720" height="1452" alt="1000346077" src="https://github.com/user-attachments/assets/79df1aab-9c55-4f12-afc8-43c7082513b8" />
 
-🔢 Web Calculator
-My very first HTML and CSS project—a functional web calculator created by replicating the clean layout and UI of my smartphone's default calculator app.
 
-🌊 Ocean Awareness Site
-vibe-coded web project dedicated to spreading awareness about marine conservation, ocean ecosystems, and environmental preservation through engaging design.
+3. Space-explorer
+<img width="720" height="1454" alt="1000346078" src="https://github.com/user-attachments/assets/4c51e60e-e11c-49e8-b092-e9b8db9ad1b8" />
 
-🪐 AURORA Solar System Explorer
-A vibe-coded interactive astronomical explorer built to visualize planetary orbits, celestial mechanics, and deep-space phenomena.
 
-💼 Personel Portfolio
-A fully custom, responsive showcase designed and built from scratch to present my coding projects and growing skill set.
-
-🛠️ Tech Stack<img width="720" height="1461" alt="1000346076" src="https://github.com/user-attachments/assets/12dbfe2c-051c-4830-b4ef-1b4f57d52401" />
-
-• HTML
-• CSS
+4. Personal Portfolio
+<img width="720" height="1461" alt="1000346076" src="https://github.com/user-attachments/assets/43cfb8d8-a7ec-4474-994f-f08acdba2024" />
 
 Direct link to the project:- 
 https://portfolio-build-design.netlify.app/
