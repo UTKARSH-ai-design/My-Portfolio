@@ -26,6 +26,9 @@ body{
 nav{
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 
 .project-name {
@@ -68,6 +71,7 @@ box-shadow: 0 0px 0px rgba(0, 0, 0, 1.0)
         display: flex;
         align-items: center;
         width: 100%;
+        
     }
     
 }
@@ -102,11 +106,18 @@ nav a.active {
     border-bottom: 3px solid #00E5FF;
 }
 
+img{
+    width: 300px;
+    max-width: 90vw;
+    height: auto;
+}
+
 a{
     color:white;
     text-decoration:none;
 background-color: black;
 width: 300px;
+max-width: 90vw;
 min-height: 150px;
 height: auto;
 margin-top: 25px;

@@ -11,29 +11,42 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: clamp(3.68px, 1vw, 10px);
 }
 
 body{
     width: 100%;
-    height: 100vh;
-    
+    min-height: 100vh;
     background-color: black;
     color: white;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    overflow:hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .content{
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto; 
+  margin: 0 auto;
   background-color: black;
   box-sizing: border-box;
-  padding: 40px;
+  padding: clamp(15px, 4vw, 40px);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar{
+    width: 100%;
+}
+
+.navbar nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .project-name{
@@ -58,6 +71,7 @@ nav a {
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
     margin-top: 2rem;
+    white-space: nowrap;
 }
 
 nav a:hover,
@@ -67,8 +81,14 @@ nav a.active {
 }
 
 .home-content{
-    margin-top: 70rem;
-    margin-left: -5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0;
 }
 
 .home-content h2{
@@ -76,7 +96,6 @@ nav a.active {
     font-weight: 700;
     line-height: 1.3;
     margin-top: 4rem;
-    margin-left: 25rem;
 }
 
 span{
@@ -87,13 +106,15 @@ span{
     font-size: 5rem;
     margin-bottom: 1rem;
     font-weight: 700;
-    margin-left: 32.4rem;
+    margin-top: 1rem;
 }
 
 .typing-text{
     font-size: 34px;
     font-weight: 600;
-    min-width: 280px;
+    min-width: clamp(150px, 60vw, 280px);
+    display: flex;
+    justify-content: center;
 }
 
 .typing-text span{
@@ -142,7 +163,11 @@ span{
 }
 
 .social-icons{
-    margin-left: 36rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: auto;
 }
 
 .social-icons a {
@@ -167,113 +192,17 @@ span{
     box-shadow: 0 0 25px #00E5FF;
 }
 
-@media screen and (max-width: 1366px) {
-  body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-  }
-  
+@media screen and (max-width: 480px) {
+    .navbar nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a{
+        margin-left: 0;
+    }
+
+    .project-name{
+        margin-left: 0;
+    }
 }
-
-@media screen and (max-width: 768px) {
-body {
-    margin: 0;
-    padding: 0;
-    display: inline-flex;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 360px) {
-    html {
-    font-size: 0.23rem;
-  }
-
-  body {
-    background-color: black; 
-  }
-
-  .content {
-    width: 100%;    
-    max-width: 100%; 
-    padding: 15px;   
-  }
-      
-    
-  .navbar, .home-content{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .social-icons{
-      display: flex;
-flex-direction: row;
-width: 100%;
-  }
-}
-
-@media screen and (max-width: 640px) {
-    html {
-    font-size: 0.23rem;
-  }
-
-  body {
-    background-color: black; 
-  }
-
-  .content {
-    width: 100%;    
-    max-width: 100%; 
-    padding: 15px;   
-  }
-      
-    
-  .navbar, .home-content{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .social-icons{
-      display: flex;
-flex-direction: row;
-width: 100%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  
-  html {
-    font-size: 0.23rem;
-  }
-
-  body {
-    background-color: black; 
-  }
-
-  .content {
-    width: 100%;    
-    max-width: 100%; 
-    padding: 15px;   
-  }
-      
-    
-  .navbar, .home-content{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .social-icons{
-      display: flex;
-flex-direction: row;
-width: 100%;
-  }
-}
-
-
-
