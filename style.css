@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    overflow:hidden;
+}
+
+.content{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; 
+  background-color: black;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.project-name{
+    font-size: 8rem;
+    color: #00E5FF;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+    margin-left: 0.7rem;
+}
+
+.project-name:hover {
+    transform: scale(1.1);
+    border-bottom: 3px solid transparent;
+}
+
+nav a {
+    font-size: 3.2rem;
+    color: white;
+    margin-left: 4.8rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    margin-top: 2rem;
+}
+
+nav a:hover,
+nav a.active {
+    color: #00E5FF;
+    border-bottom: 3px solid #00E5FF;
+}
+
+.home-content{
+    margin-top: 70rem;
+    margin-left: -5rem;
+}
+
+.home-content h2{
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 4rem;
+    margin-left: 25rem;
+}
+
+span{
+    color: #00E5FF;
+}
+
+.home-content h3{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    margin-left: 32.4rem;
+}
+
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: "software Developer";
+    color: #00E5FF;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 2px solid black;
+    right: -8;
+    animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+    0%{
+        border-left: 3px solid black;
+    }
+    50% {
+        border-left: 3px solid #00E5FF;
+    }
+    100%{
+        border-left: 3px solid black;
+    }
+}
+
+@keyframes words{
+0%, 34%{
+    content:"Student";
+}
+35%, 66%{
+    content:"Developer";
+}
+67%, 100%{
+    content: "Maker";
+}
+}
+
+.social-icons{
+    margin-left: 36rem;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #00E5FF;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #00E5FF;
+}
+
+.social-icons a:hover {
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #00E5FF;
+    box-shadow: 0 0 25px #00E5FF;
+}
+
+@media screen and (max-width: 1366px) {
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+body {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+    html {
+    font-size: 0.23rem;
+  }
+
+  body {
+    background-color: black; 
+  }
+
+  .content {
+    width: 100%;    
+    max-width: 100%; 
+    padding: 15px;   
+  }
+      
+    
+  .navbar, .home-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .social-icons{
+      display: flex;
+flex-direction: row;
+width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+    html {
+    font-size: 0.23rem;
+  }
+
+  body {
+    background-color: black; 
+  }
+
+  .content {
+    width: 100%;    
+    max-width: 100%; 
+    padding: 15px;   
+  }
+      
+    
+  .navbar, .home-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .social-icons{
+      display: flex;
+flex-direction: row;
+width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  
+  html {
+    font-size: 0.23rem;
+  }
+
+  body {
+    background-color: black; 
+  }
+
+  .content {
+    width: 100%;    
+    max-width: 100%; 
+    padding: 15px;   
+  }
+      
+    
+  .navbar, .home-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .social-icons{
+      display: flex;
+flex-direction: row;
+width: 100%;
+  }
+}
+
+
+
